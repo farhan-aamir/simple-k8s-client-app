@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: client-pod
+  labels: 
+    component: web
+spec:
+  containers:
+    - name: web-app
+      image: farhan899/simple-web-app
+      ports:
+        - containerPort: 8080     
